@@ -19,6 +19,7 @@
         <h3 itemprop="jobTitle">{{ i18n "role"}}</h3>
         {{ if $.Site.Params.organization }}
         <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+			<!--<i class="fa fa-university" aria-hidden="true"></i>-->
           {{ with $.Site.Params.organization_url }}<a href="{{ .}}" target="_blank" itemprop="url">{{ end }}
             <span itemprop="name">{{ i18n "organization" }}</span>
           {{ if $.Site.Params.organization_url }}</a>{{ end }}
