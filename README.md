@@ -13,7 +13,7 @@ This is a project of hugo academic theme.
 - forked from [matcornic/hugo-theme-learn](https://github.com/matcornic/hugo-theme-learn)
 - Porting Grav Learn theme to Hugo [http://key-amb.github.io/bootie-docs-demo/](https://matcornic.github.io/hugo-learn-doc/basics/what-is-this-hugo-theme/)
 
-## Minino
+## Minimo
 - forked from [MunifTanjim/minimo](https://github.com/MunifTanjim/minimo)
 - Minimo - Minimalist theme for Hugo https://minimo.netlify.com
 
