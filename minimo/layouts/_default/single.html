@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+
+<main class='main'>
+  <article class='single'>
+    {{ partial "single/header.html" . }}
+    <div class='single-content'>
+      {{ .Content }}
+    </div>
+    {{ partial "single/footer.html" . }}
+  </article>
+
+  {{ if not .Site.Params.HideSingleNavigation }}
+    {{ partial "nav/single_nav.html" . }}
+  {{ end }}
+
+  {{ if not ( eq .Params.comments false ) }}
+    {{ partial "disqus.html" . }}
+  {{ end }}
+</main>
+
+{{ partial "footer.html" . }}

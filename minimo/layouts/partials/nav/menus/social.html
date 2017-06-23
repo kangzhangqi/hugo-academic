@@ -1,0 +1,13 @@
+<nav>
+  <ul class='social-menu'>
+  {{ range $platform, $username := .Site.Author.social }}
+    {{ if $username }}
+    <li>
+      <a href='{{ print (index $.Site.Data.social.base $platform) $username }}' target='_blank' rel='noopener'>
+        {{ partial "svg/icons.html" $platform }}
+      </a>
+    </li>
+    {{ end }}
+  {{ end }}
+  </ul>
+</nav>

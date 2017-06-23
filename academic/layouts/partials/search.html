@@ -1,0 +1,21 @@
+<li class="nav-item">
+{{ with .Site.Params.searchDomain }}
+<form class="navbar-form navbar-left" role="search" action="https://www.google.co.jp/search" method="get" >
+	<div class="input-group doc-search-form" >
+		<!--搜索域名范围的显示-->
+		<input type="hidden" name="as_sitesearch" value="{{ . }}">
+		
+		<!--搜索框-->
+		<input type="text" name="as_q" class="search-query doc-search-input-text" placeholder={{ i18n "search-site" }}  style="width:130px;height:34px;border:none;text-align:left;line-height:17px;border-radius:6px;background-color: #F0F0F0;color:#000000;" />
+		
+		<!--按钮-->
+		<span class="doc-search-input-btn">
+		<button class="btn" type="submit" style="width:40px;height:34px;text-align:left;line-height:17px;border-radius:6px;background-color: #ffffff;">
+			<span class="glyphicon glyphicon-search" style="font-size: 15px;color:#0095eb;"></span>
+			
+		</button>
+		</span>
+	</div>
+</form>
+{{ end }}
+</li>
